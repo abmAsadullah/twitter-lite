@@ -20,8 +20,8 @@
         </div>
         <div class="media-content">
           <div class="content">
-            <strong>Saifullah Saad</strong><br/>
-            <small>@saad</small><br/>
+            <strong><%= tweeet.user.try(:name) %></strong><br/>
+            <small><%= tweeet.user.try(:username) %></small><br/>
             <p><%= tweeet.tweeet %></p>
           </div>
           <nav class="level">
